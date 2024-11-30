@@ -1,5 +1,19 @@
 @charset "UFT-8";
 
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body, html{
+width: 100vw;
+height: 100vh;
+overflow-x: hidden;
+}
+
+
 .titles{
   margin-top: 50px;
   margin-left: 20px;
@@ -75,4 +89,68 @@ div#foo>a:hover{
 .card-footer > a:hover{
   background-color: #014562;
   color: #00A2E8;
+}
+
+
+#footer {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  padding: 20px;
+  margin-right: 0;
+  color: white;
+  gap: 20px; 
+  box-sizing: border-box; 
+  overflow: hidden; 
+  max-width: 100%; 
+}
+
+
+.foo {
+  flex: 1 1 calc(25% - 20px); 
+  min-width: 200px; 
+  max-width: 100%; 
+}
+
+.foo h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.foo a {
+  display: block; 
+  text-decoration: none;
+  color: rgba(239, 232, 232, 0.927);
+  margin: 5px 0;
+  font-size: 14px;
+  transition: color 0.3s;
+  word-wrap: break-word; 
+}
+
+.foo a:hover {
+  color: #007bff; 
+}
+
+@media (max-width: 768px) {
+  #footer {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+  }
+
+  .foo {
+    flex: 1 1 100%; 
+    margin-bottom: 20px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .foo h3 {
+    font-size: 16px; 
+  }
+
+  .foo a {
+    font-size: 12px; 
+  }
 }
