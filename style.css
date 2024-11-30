@@ -1,6 +1,78 @@
 @charset "UFT-8";
 
 .titles{
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 20px;
+}
+
+.tudo1,
+.tudo2 {
+  display: flex; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+
+#footer{
+  margin-top: 100px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  background-color: black;
+  justify-content: space-around;
+}
+
+
+div#footer>div#foo{
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+div#foo>h3{
+  color: rgb(215, 215, 215);
+  padding-bottom: 15px;
+  font-size: 1.1em;
+}
+
+div#foo>a{
+  color: rgb(117, 117, 117);
+  text-decoration: none;
+  padding: 10px 10px 10px 0px;
+  font-size: 0.9em;
+  transition: 0.3s;
+}
+div#foo>a:hover{
+  color: white;
+}
+
+
+.card-foote {
+  display: inline-block; 
+  text-decoration: none;
+  color: rgba(239, 232, 232, 0.927);
+  padding: 10px 20px; 
+  background-color: #2b2c2d; 
+  border-radius: 5px; 
+  font-size: 16px;
+  font-weight: bold;
+  border: none; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.card-foote:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); 
+}
+
+.card-foote:active {
+  background-color: #00408d; 
+  transform: scale(0.95);
+}
+
+.card-footer > a:hover{
+  background-color: #014562;
+  color: #00A2E8;
 }
